@@ -2,21 +2,11 @@ import json
 import sys
 import os
 
-#jsoninput = open(r"C:\Users\Eldad\Desktop\list.json").read()
-#parsedinput = json.loads(jsoninput)
+
 def create_dict_from_json(file_name):
     with open(file_name, 'r') as json_list_file:
         parsed_input = json.load(json_list_file)
     return parsed_input
-
-    #with open(file_name, 'r') as f:
-    #    try:
-    #        data = json.load(f)
-    #        print ("Done!!!")
-    #    except ValueError:
-    #        print(f'Sorry, but data in file {file_name} is not in JSON format')
-    #        return
-    #    return data
 
 
 def create_bucket_ranges(buckets_list):
